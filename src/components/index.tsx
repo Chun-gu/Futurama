@@ -4,3 +4,5 @@ export * from "./InfoContainer";
 export * from "./CreatorCard";
 export * from './CharactersContainer'
 export * from './CharactersCard'
+export * from './CastContainer'
+export * from './CastCard'
