@@ -1,4 +1,4 @@
-export interface Cast {
+export interface CastType {
     name: string;
     born: string;
     died: string;

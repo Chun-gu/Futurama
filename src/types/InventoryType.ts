@@ -1,4 +1,4 @@
-export interface Inventory {
+export interface InventoryType {
     category: string;
     description: string;
     id: number;
