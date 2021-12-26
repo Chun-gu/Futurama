@@ -1,6 +1,5 @@
-import { Error, Loading, InfoCard } from ".";
+import { Error, Loading, CreatorCard } from ".";
 import { useGetData } from "../hooks/useGetData";
-import { Info } from "../types/Info";
 
 interface InfoContainerProps {
     name: string;
@@ -20,7 +19,7 @@ export const InfoContainer = ({ name }: InfoContainerProps) => {
             <p>Aired Years: {yearsAired}</p>
             <h2>Creators</h2>
             {creators.map((creator: typeof creators) => {
-                return <InfoCard key={creator.name} creatorData={creator} />;
+                return <CreatorCard key={creator.name} creatorData={creator} />;
             })}
         </div>
     );

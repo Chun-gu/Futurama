@@ -6,7 +6,7 @@ interface CreatorProps {
     };
 }
 
-export const InfoCard = ({ creatorData }: CreatorProps) => {
+export const CreatorCard = ({ creatorData }: CreatorProps) => {
     const { name, url } = creatorData;
 
     return (
