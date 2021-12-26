@@ -30,10 +30,10 @@ export const CharactersCard = ({ charactersData }: CharactersProps) => {
             <p>
                 {age}, {gender} {species}
             </p>
-            {homePlanet}
-            {occupation}
+            <p>{homePlanet}</p>
+            <p>{occupation}</p>
             {sayings.map((saying: string, index: number) => {
-                return <p key={index}>{saying}</p>;
+                return <p key={`saying-${index}`}>{saying}</p>;
             })}
             ;
         </div>
