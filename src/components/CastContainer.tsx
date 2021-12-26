@@ -12,12 +12,12 @@ export const CastConatiner = ({ name }: CastContainerProps) => {
     if (!data) return <Loading />;
     console.log(data);
     return (
-        <div>
+        <>
             {data.map((castData:CastType)=>{
                 return(
                     <CastCard key={castData.id} castData={castData}/>
                 )
             })}
-        </div>
+        </>
     )
 };

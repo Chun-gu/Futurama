@@ -14,7 +14,7 @@ export const EpisodesContainer = ({ name }: EpisodesContainerProps) => {
 
     console.log(data);
     return (
-        <div>
+        <>
             {data.map((episodesData: EpisodesType) => {
                 return (
                     <EpisodesCard
@@ -23,6 +23,6 @@ export const EpisodesContainer = ({ name }: EpisodesContainerProps) => {
                     />
                 );
             })}
-        </div>
+        </>
     );
 };

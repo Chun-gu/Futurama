@@ -14,13 +14,13 @@ export const InfoContainer = ({ name }: InfoContainerProps) => {
     const { synopsis, yearsAired, creators } = data[0];
 
     return (
-        <div>
+        <>
             <p>Synopsis: {synopsis}</p>
             <p>Aired Years: {yearsAired}</p>
             <h2>Creators</h2>
             {creators.map((creator: typeof creators) => {
                 return <CreatorCard key={creator.name} creatorData={creator} />;
             })}
-        </div>
+        </>
     );
 };
