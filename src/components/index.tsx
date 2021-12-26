@@ -10,4 +10,5 @@ export * from './episodesContainer'
 export * from './episodesCard'
 export * from './QuestionsContainer'
 export * from './QuestionsCard'
-
+export * from './InventoryContainer'
+export * from './InventoryCard'

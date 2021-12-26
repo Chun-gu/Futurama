@@ -33,6 +33,11 @@ const Home: NextPage = () => {
                         <a>questions</a>
                     </Link>
                 </li>
+                <li>
+                    <Link href={"./inventory"}>
+                        <a>inventory</a>
+                    </Link>
+                </li>
             </ul>
         </div>
     );
