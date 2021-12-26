@@ -1,7 +1,6 @@
 import { useGetData } from "../hooks/useGetData";
 import { Error, Loading, CharactersCard } from ".";
 import { CharactersType } from "../types/CharactersType";
-import Link from "next/link";
 
 interface CharactersContainerProps {
     name: string;
@@ -14,14 +13,15 @@ export const CharactersContainer = ({ name }: CharactersContainerProps) => {
     if (!data) return <Loading />;
 
     return (
-        <div>
+        <ul>
             {data.map((charactersData: CharactersType) => {
                 return (
-                    // <Link key={charactersData.id} href="./sdf" passHref>
-                        <CharactersCard key={charactersData.id} charactersData={charactersData} />
-                    // </Link>
+                    <CharactersCard
+                        key={charactersData.id}
+                        charactersData={charactersData}
+                    />
                 );
             })}
-        </div>
+        </ul>
     );
 };
