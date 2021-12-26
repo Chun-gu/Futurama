@@ -1,6 +1,6 @@
 import { useGetData } from "../hooks/useGetData";
 import { Error, Loading, CharactersCard } from ".";
-import { Characters } from "../types/CharactersType";
+import { CharactersType } from "../types/CharactersType";
 import Link from "next/link";
 
 interface CharactersContainerProps {
@@ -15,7 +15,7 @@ export const CharactersContainer = ({ name }: CharactersContainerProps) => {
 
     return (
         <div>
-            {data.map((charactersData: Characters) => {
+            {data.map((charactersData: CharactersType) => {
                 return (
                     // <Link key={charactersData.id} href="./sdf" passHref>
                         <CharactersCard key={charactersData.id} charactersData={charactersData} />

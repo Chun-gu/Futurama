@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Characters } from "../types/CharactersType";
+import { CharactersType } from "../types/CharactersType";
 
 interface CharactersProps {
-    charactersData: Characters;
+    charactersData: CharactersType;
 }
 
 export const CharactersCard = ({ charactersData }: CharactersProps) => {
@@ -32,7 +32,7 @@ export const CharactersCard = ({ charactersData }: CharactersProps) => {
             </p>
             {homePlanet}
             {occupation}
-            {sayings.map((saying: string, index) => {
+            {sayings.map((saying: string, index: number) => {
                 return <p key={index}>{saying}</p>;
             })}
             ;
