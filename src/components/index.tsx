@@ -1,4 +1,6 @@
 export * from "./Error";
 export * from "./Loading";
 export * from "./InfoContainer";
-export * from "./InfoCard";
+export * from "./CreatorCard";
+export * from './CharactersContainer'
+export * from './CharactersCard'
