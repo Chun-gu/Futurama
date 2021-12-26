@@ -28,6 +28,11 @@ const Home: NextPage = () => {
                         <a>episodes</a>
                     </Link>
                 </li>
+                <li>
+                    <Link href={"./questions"}>
+                        <a>questions</a>
+                    </Link>
+                </li>
             </ul>
         </div>
     );

@@ -8,3 +8,6 @@ export * from './CastContainer'
 export * from './CastCard'
 export * from './episodesContainer'
 export * from './episodesCard'
+export * from './QuestionsContainer'
+export * from './QuestionsCard'
+
